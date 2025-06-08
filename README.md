@@ -35,6 +35,12 @@ git clone https://github.com/satelite2517/ising-diffusion.git
 cd ising-diffusion
 pip install -r requirements.txt
 ```
+Or
+
+```bash
+conda env create -f environment.yml
+conda activate ising-env
+```
 
 Make sure you are using Python 3.8 for reliable reproduce. And also since this code implements diffusion model and erasure machine, if you don't run this code with GPU it might take a long hour.
 So make sure nvidia driver is installed.
