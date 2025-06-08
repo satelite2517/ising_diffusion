@@ -54,7 +54,7 @@ So make sure nvidia driver is installed.
 ---
 `/src/cfg/g/ddpm_cfg.ipynb` : g의 값을 condition으로 넣고 condition free guidance를 구현한 결과로 해당 모델을 inverse ising inference 하는 결과 plot까지 포함하고 있습니다. 
 
-`/src/cfg/energy/ddpm_cfg.ipynb` : 앞선 g 하위폴더의 ddpm_cfg와 동일하게 CFG를 활용하여 diffusion 모델을 실행하는 절차를 담고 있으나 energy 와 probability 기반으로 condition 을 주고 있으며 iii 결과 플롯은 아래의 다른 파일로 저장되어 있습니다. 
+`/src/cfg/energy/ddpm_cfg.ipynb` : 앞선 g 하위폴더의 ddpm_cfg와 동일하게 CFG를 활용하여 diffusion 모델의 구조를 짜고 이를 학습하는 파일이다. mcmc로 생성한 데이터의 condtion 생성 방식을 확인할 수 있으며 condition의 경우 energy 와 probability 기반으로 condition 을 주고 있다. iii 결과 플롯은 아래의 다른 파일로 저장되어 있습니다. 그리고 위 파일의 마지막 부분의 diffusion 학습은 condtional genration / unconditional gerneration / MCMC 데이터를 함께 플랏하여 학습 상태를 직관적으로 확인할 수 있는 히스토그램으 저장한다. 
 
 - `/src/cfg/energy/cfg_uncond_iii.ipynb` : energy 기반으로 생성된 condtional generation이 가능한 모델에서 unconditional 한 방식으로 데이터를 생성후 inverse ising inference 의 결과를 보여줍니다. 
 
